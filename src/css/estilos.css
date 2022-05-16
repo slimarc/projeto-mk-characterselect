@@ -1,0 +1,157 @@
+body{
+    font-family: 'mk1', Courier, monospace;
+    background: var(--cor-secundaria);
+}
+
+body::before{ /*Coloca antes do body, nesse caso, o gif vindo antes do fundo preto */
+    content:'';
+    background-image: url("../imagens/mk-portal.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cabecalho{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho .titulo{
+    color: var(--cor-titulo-fraco);
+    text-transform: uppercase;
+    font-size: 80px;
+    line-height: 102px;
+    -webkit-text-stroke: 1px var(--cor-titulo-forte);
+}
+
+.selecao-de-personagens{
+    display: flex;
+    align-items: center;
+    padding-top: 120px;
+    justify-content: center;
+}
+
+.selecao-de-personagens .personagem-grande{
+    text-align: center;
+    width: 30%;
+    height: 70vh;
+    position: relative;
+}
+
+.selecao-de-personagens .personagem-grande img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.selecao-de-personagens .personagem-grande .nome::before{
+    content:'';
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+}
+
+.selecao-de-personagens .personagem-grande .nome h2{
+    color: var(--cor-nome-padrao);
+    font-family: 'mk2', sans-serif;
+    position: absolute;
+    bottom: -15px;
+    width: 100%;
+    font-size: 30px;
+}
+
+.selecao-de-personagens .personagem-grande.personagem-player-1 .nome::before{
+    background-color: var(--cor-green-principal);
+}
+
+.selecao-de-personagens .personagem-grande.personagem-player-2 .nome::before{
+    background-color: var(--cor-vermelha-principal);
+}
+
+.selecao-de-personagens .lista-de-personagens{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    justify-content: center;
+    gap: 12px;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem{
+    border: 3px solid var(--cor-padrao);
+    background-color: var(--cor-padrao);
+    width: 23%;
+    height: 160px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.15s ease-in-out;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.selecionado{
+     border: 2px solid var(--cor-green-media);
+     animation: c-glowing-green .3s ease-in-out infinite;
+     animation-direction: alternate;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem:hover{
+    animation: c-glowing-green .3s ease-in-out infinite;
+    animation-direction: alternate;
+    transform: scale(1.07);
+    z-index: 2;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.selecionado-jogador-2{
+    border: 2px solid var(--cor-vermelha-fraca);
+    animation: c-glowing-red .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.selecionado-jogador-2:hover{
+    animation: c-glowing-red .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem .tag{
+    display: none;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: opacity .3s ease-in-out;
+    animation-direction: alternate;  
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.selecionado .tag{
+    display: block;
+    color: var(--cor-green-media);
+    animation: text-glowing-green .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.selecionado-jogador-2 .tag{
+    display: block;
+    color: var(--cor-vermelha-media);
+    animation: text-glowing-red .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
