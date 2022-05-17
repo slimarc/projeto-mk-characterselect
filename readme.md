@@ -10,7 +10,7 @@
 
 ![](./src/imagens/projeto-mk-characterselect.gif)
 
-<p align="justify"><i>O projeto original desenvolvido pelos gêmeos do Dev em Dobro utilizava personagens da MARVEL. Como forma de criar uma nostalgia e relembrar memórias 💭 , utilizei os personagens e cenário do Mortal Kombat II.<i></p>
+<p align="justify"><i>O projeto original desenvolvido pelos gêmeos do Dev em Dobro utilizava personagens da MARVEL. Como forma de criar uma nostalgia e relembrar memórias 💭, utilizei os personagens e cenário do Mortal Kombat II.<i></p>
 
 ## Linguagens utilizadas 🛠️:
 
