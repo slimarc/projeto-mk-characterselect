@@ -7,7 +7,7 @@ O projeto foi desenvolvido durante a mapadev week, com a colaboração dos gême
 <p align="justify">O objetivo do projeto foi criar uma interface em que simula a fase de seleção de personagens de jogos de luta. O player 1 poderá selecionar um personagem ao passar o cursor por cima da imagem do mesmo, dessa forma, exibindo o nome e a imagem do selecionado ao lado esquerdo da tela. O player 2 se mantém selecionado pela própria máquina, não permitindo que o primeiro jogador escolha o mesmo personagem.</p>
 
 ## Layout final do projeto 🖼️:
-'
+
 ![](./src/imagens/projeto-mk-characterselect.gif)
 
 *O projeto original desenvolvido pelos gêmeos do Dev em Dobro utilizava personagens da MARVEL. Como forma de criar uma nostalgia e relembrar memórias 💭 , utilizei os personagens e cenário do Mortal Kombat II.*
